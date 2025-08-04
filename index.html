@@ -1,0 +1,1122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <!-- Navbar start -->
+     <div class="bg-white d-flex align-items-center fixed-top shadow mt-0" style="min-height: 65px; z-index: 5;">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <!-- left side nav bar start -->
+                <div class="col d-flex align-items-center">
+                    <!-- logo -->
+                    <i class="fa-brands fa-facebook text-primary fa-2x" type="button" style="font-size: 3rem;"></i>
+                    <!-- search bar -->
+                     <div class="input-group ms-2">
+                    <!-- mobile -->
+                    <span class="input-group-prepend d-lg-none">
+                        <div class="input-group-text bg-gray border-0 rounded-circle" style="min-height: 40px">
+                        <i class="fa-solid fa-magnifying-glass text-muted"></i>  
+                        </div>
+                     </span>
+                    <!-- desktop -->
+                     <span class="input-group-prepend d-none d-lg-block">
+                        <div class="input-group-text bg-gray border-0 rounded-pill" style="min-height: 50px; min-width: 300px;">
+                            <i class="fa-solid fa-magnifying-glass me-2 text-muted"></i>
+                            <p class="m-0 fs-7 text-muted">Search Facebook</p>
+                        </div>
+                     </span>
+
+                     </div>
+                </div>
+                <!-- left side nav bar end-->
+
+                <!--centre nav start-->
+                <div class="col d-none d-lg-flex justify-content-center">
+                    <!-- home -->
+                     <div class="mx-4 nav_btn nav_btn-active">
+                        <button class="btn px-4">
+                            <i class="fa-solid fa-house text-muted fa-2x"></i>
+                        </button>
+                     </div>
+                    <!-- video -->
+                    <div class="mx-4 nav_btn">
+                        <button class="btn px-4">
+                            <i class="fa-brands fa-youtube text-muted fa-2x"></i>
+                        </button>
+                     </div>
+                    <!-- store -->
+                    <div class="mx-4 nav_btn">
+                        <button class="btn px-4">
+                            <i class="fa-solid fa-store text-muted fa-2x"></i>
+                        </button>
+                     </div>
+                    <!-- group -->
+                    <div class="mx-4 nav_btn">
+                        <button class="btn px-4">
+                            <i class="fa-solid fa-users text-muted fa-2x"></i>
+                        </button>
+                     </div>
+                    <!-- game -->
+                    <div class="mx-4 nav_btn">
+                        <button class="btn px-4">
+                            <i class="fa-solid fa-gamepad text-muted fa-2x"></i>
+                        </button>
+                     </div>
+
+                </div>
+                <!-- centre nav end-->
+
+                <!-- right side nav bar start-->
+                <div class="col d-flex align-items-center justify-content-end">
+                    <!-- menu -->
+                     <div class="d-flex align-items-center justify-content-center p-1 mx-2 bg-gray rounded-circle rounded story class-custom" type="button" style="width: 50px; height: 50px; object-fit: cover;">
+                        <i class="fa-solid fa-bars fa-2x"></i>
+                     </div>
+                    <!-- messenger -->
+                    <div class="d-flex align-items-center justify-content-center p-1 mx-2 bg-gray rounded-circle rounded story class-custom" style="width: 50px;  height: 50px; object-fit: cover;">
+                        <button type="button" class="btn position-relative">
+                            <i class="fa-brands fa-facebook-messenger fa-2x"></i>
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                              8
+                              <span class="visually-hidden">unread messages</span>
+                            </span>
+                          </button>
+                     </div>
+                    <!-- notification -->
+                    <div class="d-flex align-items-center justify-content-center p-1 mx-2 bg-gray rounded-circle rounded story class-custom" style="width: 50px;  height: 50px; object-fit: cover;">
+                        <button type="button" class="btn position-relative">
+                            <i class="fa-solid fa-bell fa-2x"></i>
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                              20+
+                              <span class="visually-hidden">unread messages</span>
+                            </span>
+                          </button>
+                     </div>
+                    <!-- pf pic -->
+                     <div class="d-none d-xl-flex align-items-center justify-content-center p-1 mx-2 rounded story class-custom">
+                        <img src="./images/Profile.jpg" alt="pf pic logo" type="button" class="rounded-circle me-2" style="width: 50px; height: 50px; object-fit: cover;">
+
+                     </div>
+
+                </div>
+                <!-- left side nav bar end-->
+            </div>
+        </div>
+     </div>
+    <!-- Navbar end -->
+
+
+    <!-- Main body content start -->
+     <div class="container-fluid">
+        <div class="row justify-content-evenly">
+
+            <!-- left side bar start -->
+             <div class="col-12 col-lg-3">
+                <div class="d-none d-xxl-block h-100 fixed-top overflow-hidden scrollbar" style="max-width: 360px; width: 100%; z-index: 4;">
+                    <ul class="navbar-nav mt-4 ms-3 d-flex flex-column pb-2 mb-2" style="padding-top: 56px;">
+                        <li class="dropdown-item p-1 rounded story class-custom">
+                            <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
+                                <div class="p-2">
+                                    <img src="./images/Profile.jpg" alt="pf-pic-logo" class="rounded-circle me-2" style="width: 40px; height: 40px; object-fit: cover;">
+                                </div>
+                                <div>
+                                    <p class="m-0 fw-bold">Hatesh Lakhani</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="dropdown-item p-1 rounded story class-custom">
+                            <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
+                                <div class="p-2">
+                                    <img src="./images/history.png" alt="history-logo" class="rounded-circle me-2" style="width: 38px; height: 38px; object-fit: cover;">
+                                </div>
+                                <div>
+                                    <p class="m-0 fw-bold">Memories</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="dropdown-item p-1 rounded story class-custom">
+                            <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
+                                <div class="p-2">
+                                    <img src="./images/bookmark (1).png" alt="bookmark-logo" class="rounded-circle me-2" style="width: 38px; height: 38px; object-fit: cover;">
+                                </div>
+                                <div>
+                                    <p class="m-0 fw-bold">Saved</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="dropdown-item p-1 rounded story class-custom">
+                            <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
+                                <div class="p-2">
+                                    <img src="./images/groups.png" alt="groups-logo" class="rounded-circle me-2" style="width: 38px; height: 38px; object-fit: cover;">
+                                </div>
+                                <div>
+                                    <p class="m-0 fw-bold">Groups</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="dropdown-item p-1 rounded story class-custom">
+                            <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
+                                <div class="p-2">
+                                    <img src="./images/video.png" alt="video-logo" class="rounded-circle me-2" style="width: 38px; height: 38px; object-fit: cover;">
+                                </div>
+                                <div>
+                                    <p class="m-0 fw-bold">Video</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="dropdown-item p-1 rounded story class-custom">
+                            <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
+                                <div class="p-2">
+                                    <img src="./images/market.png" alt="market-logo" class="rounded-circle me-2" style="width: 38px; height: 38px; object-fit: cover;">
+                                </div>
+                                <div>
+                                    <p class="m-0 fw-bold">Marketplace</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="dropdown-item p-1 rounded story class-custom">
+                            <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
+                                <div class="p-2">
+                                    <img src="./images/feed.png" alt="feeds-logo" class="rounded-circle me-2" style="width: 38px; height: 38px; object-fit: cover;">
+                                </div>
+                                <div>
+                                    <p class="m-0 fw-bold">Feeds</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="dropdown-item p-1 rounded story class-custom">
+                            <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
+                                <div class="p-2">
+                                    <img src="./images/calendar.png" alt="calendar" class="rounded-circle me-2" style="width: 38px; height: 38px; object-fit: cover;">
+                                </div>
+                                <div>
+                                    <p class="m-0 fw-bold">Events</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <!-- see more -->
+                         <div class="p-1" type="button">
+                            <div id="accordionExample">
+                                <div>
+                                    <!-- see more -->
+                                  <div>
+                                    <div class="d-flex align-items-center rounded story class-custom" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    <div class="p-2">
+                                        <i class="fas fa-chevron-down rounded-circle p-2" style="background-color: #d5d5d5 !important;"></i>
+                                    </div>
+                                    <div>
+                                        <p class="m-0">See more</p>
+                                    </div>
+                                    </div>
+                                </div>
+                                  <!-- content -->
+
+                                  <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                    <div>
+
+                                      <!-- item 1 -->
+                                       <div class="d-flex align-items-center dropdown-item p-0 m-0 rounded story class-custom">
+                                        <div class="p-2">
+
+                                            <img src="./images/signal.png" alt="from" class="trade-circle" style="width: 38px; height: 38px; object-fit: cover;">
+                                        </div>
+
+                                        <div>
+                                            <p class="m-0 fw-bold">Ads Manager</p>
+                                        </div>
+                                        
+                                       </div>
+                                      <!-- item 2 -->
+                                       <div class="d-flex align-items-center dropdown-item p-0 m-0 rounded story class-custom">
+                                        <div class="p-2">
+
+                                            <img src="./images/giftbox.png" alt="gift" class="rounded-circle" style="width: 38px; height: 38px; object-fit: cover;">
+                                        </div>
+
+                                        <div>
+                                            <p class="m-0 fw-bold">Birthdays</p>
+                                        </div>
+                                        
+                                       </div>
+                                      <!-- item 3 -->
+                                       <div class="d-flex align-items-center dropdown-item p-0 m-0 rounded story class-custom">
+                                        <div class="p-2">
+
+                                            <img src="./images/ecology.png" alt="plant" class="rounded-circle" style="width: 38px; height: 38px; object-fit: cover;">
+                                        </div>
+
+                                        <div>
+                                            <p class="m-0 fw-bold">Climate Science Centre</p>
+                                        </div>
+                                        
+                                       </div>
+                                      <!-- item 4 -->
+                                       <div class="d-flex align-items-center dropdown-item p-0 m-0 rounded story class-custom">
+                                        <div class="p-2">
+
+                                            <img src="./images/notification-bell.png" alt="bell" class="rounded-circle" style="width: 38px; height: 38px; object-fit: cover;">
+                                        </div>
+
+                                        <div>
+                                            <p class="m-0 fw-bold">Notifications</p>
+                                        </div>
+                                        
+                                       </div>
+                                      <!-- item 5 -->
+                                       <div class="d-flex align-items-center dropdown-item p-0 m-0 rounded story class-custom">
+                                        <div class="p-2">
+
+                                            <img src="./images/game-control.png" alt="game" class="rounded-circle" style="width: 38px; height: 38px; object-fit: cover;">
+                                        </div>
+
+                                        <div>
+                                            <p class="m-0 fw-bold">Gaming video</p>
+                                        </div>
+                                        
+                                       </div>
+                                      <!-- item 6 -->
+                                       <div class="d-flex align-items-center dropdown-item p-0 m-0 rounded story class-custom">
+                                        <div class="p-2">
+
+                                            <img src="./images/messenger.png" alt="messenger" class="rounded-circle" style="width: 38px; height: 38px; object-fit: cover;">
+                                        </div>
+
+                                        <div>
+                                            <p class="m-0 fw-bold">Messenger</p>
+                                        </div>
+                                        
+                                       </div>
+                                      <!-- item 7 -->
+                                       <div class="d-flex align-items-center dropdown-item p-0 m-0 rounded story class-custom">
+                                        <div class="p-2">
+
+                                            <img src="./images/credit-card.png" alt="credit" class="rounded-circle" style="width: 38px; height: 38px; object-fit: cover;">
+                                        </div>
+
+                                        <div>
+                                            <p class="m-0 fw-bold">Order and payments</p>
+                                        </div>
+                                        
+                                       </div>
+                                      <!-- item 8 -->
+                                       <div class="d-flex align-items-center dropdown-item p-0 m-0 rounded story class-custom">
+                                        <div class="p-2">
+
+                                            <img src="./images/facebook-page.png" alt="pages" class="rounded-circle" style="width: 38px; height: 38px; object-fit: cover;">
+                                        </div>
+
+                                        <div>
+                                            <p class="m-0 fw-bold">Pages</p>
+                                        </div>
+                                        
+                                       </div>
+                                      <!-- item 9 -->
+                                       <div class="d-flex align-items-center dropdown-item p-0 m-0 rounded story class-custom">
+                                        <div class="p-2">
+
+                                            <img src="./images/reel.png" alt="reel" class="rounded-circle" style="width: 38px; height: 38px; object-fit: cover;">
+                                        </div>
+
+                                        <div>
+                                            <p class="m-0 fw-bold">Reels</p>
+                                        </div>
+                                        
+                                       </div>
+                                      <!-- item 10 -->
+                                       <div class="d-flex align-items-center dropdown-item p-0 m-0 rounded story class-custom">
+                                        <div class="p-2">
+
+                                            <img src="./images/activities.png" alt="activity" class="rounded-circle" style="width: 38px; height: 38px; object-fit: cover;">
+                                        </div>
+
+                                        <div>
+                                            <p class="m-0 fw-bold">Recent ad activity</p>
+                                        </div>
+                                        
+                                       </div>
+                                      
+                                    </div>
+                                  </div>
+                                </div>                                
+                              </div>
+                         </div>
+
+                         <!-- shortcut -->
+                          <hr class="m-0">
+                          <!-- heading -->
+                           <div class="d-flex align-items-center justify-content-between mt-2 text-muted edit-heading">
+                            <h4 class="m-0 text-muted">Your Shortcuts</h4>
+                            <p type="button" class="m-0 text-primary me-3 edit-button">Edit</p>
+                           </div>
+
+                           <!-- short 1 -->
+                           <li class="dropdown-item p-1 rounded story class-custom">
+                            <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
+                                <div class="p-2">
+                                    <img src="./images/teen patti gold.jpeg" alt="cards-logo" class="rounded me-2" style="width: 38px; height: 38px; object-fit: cover;">
+                                </div>
+                                <div>
+                                    <p class="m-0 fw-bold">Teen Patti Gold</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <!-- short 2 -->
+                        <li class="dropdown-item p-1 rounded story class-custom">
+                            <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
+                                <div class="p-2">
+                                    <img src="./images/snooker-game.png" alt="snoker-logo" class="me-2" style="width: 38px; height: 38px; object-fit: cover;">
+                                </div>
+                                <div>
+                                    <p class="m-0 fw-bold">Snooker</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <!-- short 3 -->
+                        <li class="dropdown-item p-1 rounded story class-custom">
+                            <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
+                                <div class="p-2">
+                                    <img src="./images/photographer.png" alt="photographer-logo" class="me-2" style="width: 38px; height: 38px; object-fit: cover;">
+                                </div>
+                                <div>
+                                    <p class="m-0 fw-bold">Photographer</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- term -->
+                       <div class="p-0 mt-0 ms-4">
+                        <p class="text-muted fs-7">
+                            Privacy  &#8226; Terms  &#8226; Advertising  &#8226; Ad choices  &#8226; Cookies  &#8226;  More &#8226; Meta © 2024
+                        </p>
+                     </div>
+                </div>
+             </div>
+            <!-- left side bar end-->
+
+            <!-- timeline bar start -->
+             <div class="col-12 col-lg-6">
+                <div class="d-flex flex-column justify-content-center w-100 mx-auto" style="padding-top: 56px; max-width: 780px;">
+                    <!-- Story section-->
+                     <div class="d-flex justify-content-between position-relative mt-4">
+                        <!-- story 1 -->
+                         <div class="mx-1 bg-white rounded story border border-2 solid black" type="button" style="width: 9em; height: 220px;">
+                            <img src="./images/Profile.jpg" alt="my-pf" class="card-img-top rounded" style="min-height: 170px; object-fit: cover;">
+                            <div class="d-flex align-items-center justify-content-center position-relative" style="min-height: 65px;">
+                                <p class="mb-0 text-center fs-7 fw-bold">Create story</p>
+                                <div class="position-absolute top-0 start-50 translate-middle">
+                                    <i class="fas fa-plus-circle fs-3 text-primary bg-white p-1 rounded-circle">
+
+                                    </i>
+                                </div>
+                            </div>
+                         </div>
+                         <!-- story 2 -->
+                          <div class="rounded mx-1 story" type="button" style="width: 9em; height: 220px;">
+                            <img src="./images/story-2.avif" alt="pf-pic" class="card-img-top rounded" style="min-height: 220px; object-fit: cover;">                          
+
+                          </div>
+
+                           <!-- story 3 -->
+                           <div class="rounded mx-1 story" type="button" style="width: 9em; height: 220px;">
+                            <img src="./images/story-3.avif" alt="pf-pic" class="card-img-top rounded" style="min-height: 220px; object-fit: cover;">
+                          </div>
+
+                           <!-- story 4 -->
+                           <div class="rounded mx-1 story" type="button" style="width: 9em; height: 220px;">
+                            <img src="./images/story-4.avif" alt="pf-pic" class="card-img-top rounded" style="min-height: 220px; object-fit: cover;">
+                          </div>
+
+                           <!-- story 5 -->
+                           <div class="rounded mx-1 story d-none d-lg-block" type="button" style="width: 9em; height: 220px;">
+                            <img src="./images/story-5.avif" alt="pf-pic" class="card-img-top rounded" style="min-height: 220px; object-fit: cover;">
+                          </div>
+
+                           <!-- story 6 -->
+                           <div class="rounded mx-1 story d-none d-lg-block" type="button" style="width: 9em; height: 220px;">
+                            <img src="./images/story-6.avif" alt="pf-pic" class="card-img-top rounded" style="min-height: 220px; object-fit: cover;">
+                          </div>
+
+                        
+
+                          <!-- next icon -->
+                           <div class="position-absolute top-50 start-100 translate-middle d-none d-lg-block">
+                            <i class="fas fa-arrow-right p-3 border text-muted bg-white rounded-circle"></i>
+                           </div>
+                     </div>
+                     <!-- create post -->
+                      <div class="bg-white p-3 mt-3 rounded border shadow">
+                        <!-- image -->
+                         <div class="d-flex" type="button">
+                            <div class="p-1">
+                                <img src="./images/Profile.jpg" alt="pf-pic" class="rounded-circle me-2" style="width: 40px; height: 40px; object-fit: cover;">
+                            </div>
+                            <input type="text" class="form-control rounded-pill border-0 bg-gray" placeholder="What's on your mind, Hatesh?">
+                         </div>
+                        
+                        <!-- action -->
+                         <div class="d-flex flex-column flex-lg-row mt-3">
+                            <!-- actn 1 -->
+                             <div class="d-flex align-items-center justify-content-center rounded story class-custom dropdown-item" type="button">
+                                <i class="fas fa-video fa-lg m-2 text-danger"></i>
+                                <p class="m-0 text-muted fw-bold">Live video</p>
+                             </div>
+
+                             <!-- actn 2 -->
+                             <div class="d-flex align-items-center justify-content-center rounded story class-custom dropdown-item" type="button">
+                                <i class="fa-solid fa-photo-film fa-lg m-2 text-success"></i>
+                                <p class="m-0 text-muted fw-bold">Photo/video</p>
+                             </div>
+
+                             <!-- actn 3 -->
+                             <div class="d-flex align-items-center justify-content-center rounded story class-custom dropdown-item" type="button">
+                                <i class="fas fa-face-laugh fa-lg m-2 text-warning"></i>
+                                <p class="m-0 text-muted fw-bold">Feeling/activity</p>
+                             </div>
+
+                         </div>
+                      </div>
+                     
+                     <!-- posts -->
+
+                     <!-- post 1 -->
+                      <div class="bg-white p-4 rounded shadow mt-3">
+                        <!-- user -->
+                         <div class="d-flex justify-content-between">
+                            <!-- image -->
+                             <div class="d-flex">
+                                <img src="./images/zeeshan.jpeg" alt="pf-pic" class="rounded-circle me-2" style="width: 40px; height: 40px; object-fit: cover;">
+                                <div>
+                                    <p class="m-0 fw-bold ">Zeeshan Hanif</p>
+                                    <span class="text-muted fs-7">Dec 15 at 9:58am</span>
+                                </div>
+                             </div>
+                            <!-- icon -->
+                            <div class="d-flex justify-content-end justify-content-between gap-3">
+                                <i class="fa-solid fa-ellipsis" type="button"></i>
+                                <i class="fa-solid fa-xmark"></i>
+                            </div>
+                         </div>
+                         <!-- user content -->
+                          <div class="mt-1">
+                            <!-- content -->
+                             <div>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore enim reiciendis earum culpa sapiente est dolore natus voluptatibus aperiam sed, corporis doloremque, ratione quia consequuntur! Dignissimos totam atque neque temporibus!</p>
+                                <img src="./images/post1.jpg" alt="post1" class="img-fluid">
+                             </div>
+                            <!-- likes and comments -->
+                             <div class="d-flex justify-content-center justify-content-between mt-3">
+                                <!-- likes -->
+                                 <div>
+                                    <i class="fa-solid fa-thumbs-up text-primary fa-lg"></i>
+                                    <i class="fa-solid fa-heart text-danger fa-lg"></i>
+                                    <span>816</span>
+                                 </div>
+
+                                 <div>
+                                    <p>100 comments 13 shares</p>
+                                 </div>
+                                 
+                             </div>
+
+                             <hr>
+
+                             <!-- comments -->
+                             <div class="d-flex flex-column flex-lg-row mt-3">
+                                <!-- actn 1 -->
+                                 <div class="d-flex align-items-center justify-content-center rounded dropdown-item gap-2 rounded story class-custom" type="button">
+                                    <i class="fa-regular fa-thumbs-up fa-lg"></i>
+                                    <p class="m-0 text-muted fw-bold fs-5">Like</p>
+                                 </div>
+    
+                                 <!-- actn 2 -->
+                                 <div class="d-flex align-items-center justify-content-center rounded dropdown-item gap-2 rounded story class-custom" type="button">
+                                    <i class="fa-regular fa-comment fa-flip-horizontal fa-lg"></i>
+                                    <p class="m-0 text-muted fw-bold fs-5">Comment</p>
+                                 </div>
+    
+                                 <!-- actn 3 -->
+                                 <div class="d-flex align-items-center justify-content-center rounded dropdown-item gap-2 rounded story class-custom" type="button">
+                                    <i class="fa-brands fa-whatsapp fa-lg"></i>
+                                    <p class="m-0 text-muted fw-bold fs-5">Send</p>
+                                 </div>
+
+                                 <!-- actn 4 -->
+                                 <div class="d-flex align-items-center justify-content-center rounded dropdown-item gap-2 rounded story class-custom" type="button">
+                                    <i class="fa-solid fa-share fa-lg"></i>
+                                    <p class="m-0 text-muted fw-bold fs-5">Share</p>
+                                 </div>
+    
+                             </div>
+
+                             <hr>
+                             
+                             <!-- cooments section -->
+
+                             <!-- image -->
+                         <div class="d-flex" type="button">
+                            <div class="p-1">
+                                <img src="./images/Profile.jpg" alt="" class="rounded-circle me-2" style="width: 38px; height: 38px; object-fit: cover;">
+                            </div>
+                            <input type="text" class="form-control rounded-pill border-0 bg-gray" placeholder="Comment as Hatesh Lakhani">
+                         </div>
+
+                          </div>
+                      </div>
+
+                      <!-- post 2 -->
+                      <div class="bg-white p-4 rounded shadow mt-3">
+                        <!-- user -->
+                         <div class="d-flex justify-content-between">
+                            <!-- image -->
+                             <div class="d-flex">
+                                <img src="./images/john.jpeg" alt="pf-pic" class="rounded-circle me-2" style="width: 40px; height: 40px; object-fit: cover;">
+                                <div>
+                                    <p class="m-0 fw-bold ">John Doe</p>
+                                    <span class="text-muted fs-7">Dec 15 at 9:58am</span>
+                                </div>
+                             </div>
+                            <!-- icon -->
+                            <div class="d-flex justify-content-end justify-content-between gap-3">
+                                <i class="fa-solid fa-ellipsis" type="button"></i>
+                                <i class="fa-solid fa-xmark"></i>
+                            </div>
+                         </div>
+                         <!-- user content -->
+                          <div class="mt-1">
+                            <!-- content -->
+                             <div>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore enim reiciendis earum culpa sapiente est dolore natus voluptatibus aperiam sed, corporis doloremque, ratione quia consequuntur! Dignissimos totam atque neque temporibus!</p>
+                                <img src="./images/john doe.jpg" alt="post1" class="img-fluid">
+                             </div>
+                            <!-- likes and comments -->
+                             <div class="d-flex justify-content-center justify-content-between mt-3">
+                                <!-- likes -->
+                                 <div>
+                                    <i class="fa-solid fa-thumbs-up text-primary fa-lg"></i>
+                                    <i class="fa-solid fa-heart text-danger fa-lg"></i>
+                                    <span>816</span>
+                                 </div>
+
+                                 <div>
+                                    <p>100 comments 13 shares</p>
+                                 </div>
+                                 
+                             </div>
+
+                             <hr>
+
+                             <!-- comments -->
+                             <div class="d-flex flex-column flex-lg-row mt-3">
+                                <!-- actn 1 -->
+                                 <div class="d-flex align-items-center justify-content-center rounded dropdown-item gap-2 rounded story class-custom" type="button">
+                                    <i class="fa-regular fa-thumbs-up fa-lg"></i>
+                                    <p class="m-0 text-muted fw-bold fs-5">Like</p>
+                                 </div>
+    
+                                 <!-- actn 2 -->
+                                 <div class="d-flex align-items-center justify-content-center rounded dropdown-item gap-2 rounded story class-custom" type="button">
+                                    <i class="fa-regular fa-comment fa-flip-horizontal fa-lg"></i>
+                                    <p class="m-0 text-muted fw-bold fs-5">Comment</p>
+                                 </div>
+    
+                                 <!-- actn 3 -->
+                                 <div class="d-flex align-items-center justify-content-center rounded dropdown-item gap-2 rounded story class-custom" type="button">
+                                    <i class="fa-brands fa-whatsapp fa-lg"></i>
+                                    <p class="m-0 text-muted fw-bold fs-5">Send</p>
+                                 </div>
+
+                                 <!-- actn 4 -->
+                                 <div class="d-flex align-items-center justify-content-center rounded dropdown-item gap-2 rounded story class-custom" type="button">
+                                    <i class="fa-solid fa-share fa-lg"></i>
+                                    <p class="m-0 text-muted fw-bold fs-5">Share</p>
+                                 </div>
+    
+                             </div>
+
+                             <hr>
+                             
+                             <!-- cooments section -->
+
+                             <!-- image -->
+                         <div class="d-flex" type="button">
+                            <div class="p-1">
+                                <img src="./images/Profile.jpg" alt="" class="rounded-circle me-2" style="width: 38px; height: 38px; object-fit: cover;">
+                            </div>
+                            <input type="text" class="form-control rounded-pill border-0 bg-gray" placeholder="Comment as Hatesh Lakhani">
+                         </div>
+
+                          </div>
+                      </div>
+
+                      <!-- post 3 -->
+                      <div class="bg-white p-4 rounded shadow mt-3">
+                        <!-- user -->
+                         <div class="d-flex justify-content-between">
+                            <!-- image -->
+                             <div class="d-flex">
+                                <img src="./images/kelly.jpeg" alt="pf-pic" class="rounded-circle me-2" style="width: 40px; height: 40px; object-fit: cover;">
+                                <div>
+                                    <p class="m-0 fw-bold ">Kelly Preston</p>
+                                    <span class="text-muted fs-7">Dec 15 at 9:58am</span>
+                                </div>
+                             </div>
+                            <!-- icon -->
+                            <div class="d-flex justify-content-end justify-content-between gap-3">
+                                <i class="fa-solid fa-ellipsis" type="button"></i>
+                                <i class="fa-solid fa-xmark"></i>
+                            </div>
+                         </div>
+                         <!-- user content -->
+                          <div class="mt-1">
+                            <!-- content -->
+                             <div>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore enim reiciendis earum culpa sapiente est dolore natus voluptatibus aperiam sed, corporis doloremque, ratione quia consequuntur! Dignissimos totam atque neque temporibus!</p>
+                                <img src="./images/post3.png" alt="post3" class="img-fluid">
+                             </div>
+                            <!-- likes and comments -->
+                             <div class="d-flex justify-content-center justify-content-between mt-3">
+                                <!-- likes -->
+                                 <div>
+                                    <i class="fa-solid fa-thumbs-up text-primary fa-lg"></i>
+                                    <i class="fa-solid fa-heart text-danger fa-lg"></i>
+                                    <span>816</span>
+                                 </div>
+
+                                 <div>
+                                    <p>100 comments 13 shares</p>
+                                 </div>
+                                 
+                             </div>
+
+                             <hr>
+
+                             <!-- comments -->
+                             <div class="d-flex flex-column flex-lg-row mt-3">
+                                <!-- actn 1 -->
+                                 <div class="d-flex align-items-center justify-content-center rounded dropdown-item gap-2 rounded story class-custom" type="button">
+                                    <i class="fa-regular fa-thumbs-up fa-lg"></i>
+                                    <p class="m-0 text-muted fw-bold fs-5">Like</p>
+                                 </div>
+    
+                                 <!-- actn 2 -->
+                                 <div class="d-flex align-items-center justify-content-center rounded dropdown-item gap-2 rounded story class-custom" type="button">
+                                    <i class="fa-regular fa-comment fa-flip-horizontal fa-lg"></i>
+                                    <p class="m-0 text-muted fw-bold fs-5">Comment</p>
+                                 </div>
+    
+                                 <!-- actn 3 -->
+                                 <div class="d-flex align-items-center justify-content-center rounded dropdown-item gap-2 rounded story class-custom" type="button">
+                                    <i class="fa-brands fa-whatsapp fa-lg"></i>
+                                    <p class="m-0 text-muted fw-bold fs-5">Send</p>
+                                 </div>
+
+                                 <!-- actn 4 -->
+                                 <div class="d-flex align-items-center justify-content-center rounded dropdown-item gap-2 rounded story class-custom" type="button">
+                                    <i class="fa-solid fa-share fa-lg"></i>
+                                    <p class="m-0 text-muted fw-bold fs-5">Share</p>
+                                 </div>
+    
+                             </div>
+
+                             <hr>
+                             
+                             <!-- cooments section -->
+
+                             <!-- image -->
+                         <div class="d-flex" type="button">
+                            <div class="p-1">
+                                <img src="./images/Profile.jpg" alt="" class="rounded-circle me-2" style="width: 38px; height: 38px; object-fit: cover;">
+                            </div>
+                            <input type="text" class="form-control rounded-pill border-0 bg-gray" placeholder="Comment as Hatesh Lakhani">
+                         </div>
+
+                          </div>
+                      </div>
+
+                      <!-- post 4 -->
+                      <div class="bg-white p-4 rounded shadow mt-3">
+                        <!-- user -->
+                         <div class="d-flex justify-content-between">
+                            <!-- image -->
+                             <div class="d-flex">
+                                <img src="./images/william.jpeg" alt="pf-pic" class="rounded-circle me-2" style="width: 40px; height: 40px; object-fit: cover;">
+                                <div>
+                                    <p class="m-0 fw-bold ">William Hanna</p>
+                                    <span class="pt-0 text-muted fs-7">Dec 15 at 9:58am</span>
+                                </div>
+                             </div>
+                            <!-- icon -->
+                            <div class="d-flex justify-content-end justify-content-between gap-3">
+                                <i class="fa-solid fa-ellipsis" type="button"></i>
+                                <i class="fa-solid fa-xmark"></i>
+                            </div>
+                         </div>
+                         <!-- user content -->
+                          <div class="mt-1">
+                            <!-- content -->
+                             <div>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore enim reiciendis earum culpa sapiente est dolore natus voluptatibus aperiam sed, corporis doloremque, ratione quia consequuntur! Dignissimos totam atque neque temporibus!</p>
+                                <img src="./images/post4.jpg" alt="post4" class="img-fluid">
+                             </div>
+                            <!-- likes and comments -->
+                             <div class="d-flex justify-content-center justify-content-between mt-3">
+                                <!-- likes -->
+                                 <div>
+                                    <i class="fa-solid fa-thumbs-up text-primary fa-lg"></i>
+                                    <i class="fa-solid fa-heart text-danger fa-lg"></i>
+                                    <span>816</span>
+                                 </div>
+
+                                 <div>
+                                    <p>100 comments 13 shares</p>
+                                 </div>
+                                 
+                             </div>
+
+                             <hr>
+
+                             <!-- comments -->
+                             <div class="d-flex flex-column flex-lg-row mt-3">
+                                <!-- actn 1 -->
+                                 <div class="d-flex align-items-center justify-content-center rounded dropdown-item gap-2 rounded story class-custom" type="button">
+                                    <i class="fa-regular fa-thumbs-up fa-lg"></i>
+                                    <p class="m-0 text-muted fw-bold fs-5">Like</p>
+                                 </div>
+    
+                                 <!-- actn 2 -->
+                                 <div class="d-flex align-items-center justify-content-center rounded dropdown-item gap-2 rounded story class-custom" type="button">
+                                    <i class="fa-regular fa-comment fa-flip-horizontal fa-lg"></i>
+                                    <p class="m-0 text-muted fw-bold fs-5">Comment</p>
+                                 </div>
+    
+                                 <!-- actn 3 -->
+                                 <div class="d-flex align-items-center justify-content-center rounded dropdown-item gap-2 rounded story class-custom" type="button">
+                                    <i class="fa-brands fa-whatsapp fa-lg"></i>
+                                    <p class="m-0 text-muted fw-bold fs-5">Send</p>
+                                 </div>
+
+                                 <!-- actn 4 -->
+                                 <div class="d-flex align-items-center justify-content-center rounded dropdown-item gap-2 rounded story class-custom" type="button">
+                                    <i class="fa-solid fa-share fa-lg"></i>
+                                    <p class="m-0 text-muted fw-bold fs-5">Share</p>
+                                 </div>
+    
+                             </div>
+
+                             <hr>
+                             
+                             <!-- cooments section -->
+
+                             <!-- image -->
+                         <div class="d-flex" type="button">
+                            <div class="p-1">
+                                <img src="./images/Profile.jpg" alt="" class="rounded-circle me-2" style="width: 38px; height: 38px; object-fit: cover;">
+                            </div>
+                            <input type="text" class="form-control rounded-pill border-0 bg-gray" placeholder="Comment as Hatesh Lakhani">
+                         </div>
+
+                          </div>
+                      </div>
+                      
+                </div>
+             </div>
+            <!-- timeline bar end-->
+
+            <!-- right side bar start -->
+             <div class="col-12 col-lg-3">
+                <div class="d-none d-xxl-block h-100 fixed-top end-0 overflow-hidden scrollbar" style="max-width: 360px; width: 100%; z-index: 4; padding-top: 56px; left: initial !important;">
+
+                    <div class="p-3 mt-3">
+                        <!-- Friend requests -->
+                         <div class="d-flex align-items-center justify-content-between text-muted">
+                        <h4 class="m-0 text-muted">Friend requests</h4>
+                        <p type="button" class="m-0 text-primary">See All</p>
+                    </div>
+
+                        <div class="my-3 d-flex align-items-top justify-content-between text-muted rounded story class-custom">
+                                                               
+                             <a href="#" class="text-decoration-none text-dark d-flex align-items-top">
+                                <img src="./images/malik.jpeg" alt="frient-req-logo" class="rounded-circle me-3" style="width: 80px; height: 80px; object-fit: cover;">
+                                <div class="d-flex d-lg-block">
+                                    <p class="mt-0"><Strong>Malik Atta Ullah</Strong></p>
+                                    <div class="d-flex text-muted">
+                                        <img src="./images/kelly.jpeg" alt="frient-req-logo" class="rounded-circle me-0" style="width: 20px; height: 20px; object-fit: cover;">
+                                    <p class="ms-1 text-muted fs-7">1 mutual friend</p>
+
+                                    </div>
+                                    <div class="d-flex gap-2">
+                                        <button type="button" class="btn btn-primary btn-lg">Confirm</button>
+                                        <button type="button" class="btn btn-secondary btn-lg">Delete</button>
+                                         </div>
+                                </div>
+                             </a>
+                                                               
+                             <div class="bg-white mx-1 nav-item">
+                                 <p>3d</p>
+                             </div>
+
+                            </div>
+
+
+                        <!-- birthday section -->
+                        <hr class="m-0">
+                        <!-- heading -->
+                         <div>
+                         <div class="d-flex align-items-center justify-content-between mt-2 text-muted">
+                          <h4 class="m-0 text-muted">Birthdays</h4>
+                         </div>
+                         
+                         <div class="d-lg-block p-1 rounded rounded story class-custom">
+                          <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
+                              <div class="p-2">
+                                  <img src="./images/giftbox.png" alt="birthday-logo" class="me-2" style="width: 38px; height: 38px; object-fit: cover;">
+                              </div>
+                              <div>
+                                  <p class="m-0"><strong>Ali Imran</strong> and <strong>Sadique Ali </strong> have their birtdays today.</p>
+                              </div>
+                          </a>
+                        </div>
+                    </div>
+
+
+                        <!-- Contacts -->
+                         <hr class="m-0">
+                         <div class="d-flex align-items-center justify-content-between my-3">
+                            <!-- heading -->
+                            <h4 class="m-0 text-muted">Contacts</h4>
+                             <!-- icon -->
+                              <div class="d-flex align-items-end text-muted mx-2 gap-2">
+
+                                <!-- icon 1 -->
+                                <i class="fas fa-search fa-lg mx-2" type="button"></i>
+                                <!-- icon 2 -->
+                                <i class="fa-solid fa-ellipsis fa-lg" type="button"></i>
+                              </div>
+
+                              
+                         </div>
+
+                         <!-- friend 1 -->
+                          <li class="dropdown-item rounded my-2 px-0 rounded story class-custom" type="button">
+                            <!-- logo -->
+                             <div class="d-flex align-items-center mx-2">
+                                <div class="position-relative">
+                                    <img src="./images/munner.jpeg" alt="friend-pf" class="rounded-circle me-2" style="width: 38px; height: 38px; object-fit: cover;">
+                                    <span class="position-absolute bottom-0 translate-middle border border-light rounded-circle bg-success p-1" style="left: 75%;">
+                                        <span class="visually-hidden "></span>
+                                    </span>
+                                </div>
+                                <p class="m-0 fw-bold">Muneer Soomro</p>
+                             </div>
+                          </li>
+
+                          <!-- friend 2 -->
+                          <li class="dropdown-item rounded my-2 px-0 rounded story class-custom" type="button">
+                            <!-- logo -->
+                             <div class="d-flex align-items-center mx-2">
+                                <div class="position-relative">
+                                    <img src="./images/Moin.jpeg" alt="friend-pf" class="rounded-circle me-2" style="width: 38px; height: 38px; object-fit: cover;">
+                                    <span class="position-absolute bottom-0 translate-middle border border-light rounded-circle bg-success p-1" style="left: 75%;">
+                                        <span class="visually-hidden "></span>
+                                    </span>
+                                </div>
+                                <p class="m-0 fw-bold">Moin UD Din Khan</p>
+                             </div>
+                          </li>
+
+                          <!-- friend 3 -->
+                          <li class="dropdown-item rounded my-2 px-0 rounded story class-custom" type="button">
+                            <!-- logo -->
+                             <div class="d-flex align-items-center mx-2">
+                                <div class="position-relative">
+                                    <img src="./images/zeeshan b.jpeg" alt="friend-pf" class="rounded-circle me-2" style="width: 38px; height: 38px; object-fit: cover;">
+                                    <span class="position-absolute bottom-0 translate-middle border border-light rounded-circle bg-success p-1" style="left: 75%;">
+                                        <span class="visually-hidden "></span>
+                                    </span>
+                                </div>
+                                <p class="m-0 fw-bold">Zeeshan Soomro</p>
+                             </div>
+                          </li>
+
+                          <!-- friend 4 -->
+                          <li class="dropdown-item rounded my-2 px-0 rounded story class-custom" type="button">
+                            <!-- logo -->
+                             <div class="d-flex align-items-center mx-2">
+                                <div class="position-relative">
+                                    <img src="./images/abdul.jpeg" alt="friend-pf" class="rounded-circle me-2" style="width: 38px; height: 38px; object-fit: cover;">
+                                    <span class="position-absolute bottom-0 translate-middle border border-light rounded-circle bg-success p-1" style="left: 75%;">
+                                        <span class="visually-hidden "></span>
+                                    </span>
+                                </div>
+                                <p class="m-0 fw-bold">Abdul Majid Sheikh</p>
+                             </div>
+                          </li>
+
+                          <!-- friend 5 -->
+                          <li class="dropdown-item rounded my-2 px-0 rounded story class-custom" type="button">
+                            <!-- logo -->
+                             <div class="d-flex align-items-center mx-2">
+                                <div class="position-relative">
+                                    <img src="./images/jalees.jpeg" alt="friend-pf" class="rounded-circle me-2" style="width: 38px; height: 38px; object-fit: cover;">
+                                    <span class="position-absolute bottom-0 translate-middle border border-light rounded-circle bg-success p-1" style="left: 75%;">
+                                        <span class="visually-hidden "></span>
+                                    </span>
+                                </div>
+                                <p class="m-0 fw-bold">Jalees Khan</p>
+                             </div>
+                          </li>
+
+                          <!-- friend 6 -->
+                          <li class="dropdown-item rounded my-2 px-0 rounded story class-custom" type="button">
+                            <!-- logo -->
+                             <div class="d-flex align-items-center mx-2">
+                                <div class="position-relative">
+                                    <img src="./images/faisal.jpeg" alt="friend-pf" class="rounded-circle me-2" style="width: 38px; height: 38px; object-fit: cover;">
+                                    <span class="position-absolute bottom-0 translate-middle border border-light rounded-circle bg-success p-1" style="left: 75%;">
+                                        <span class="visually-hidden "></span>
+                                    </span>
+                                </div>
+                                <p class="m-0 fw-bold">Faisal Soomro</p>
+                             </div>
+                          </li>
+
+                          <!-- friend 7 -->
+                          <li class="dropdown-item rounded my-2 px-0 rounded story class-custom" type="button">
+                            <!-- logo -->
+                             <div class="d-flex align-items-center mx-2">
+                                <div class="position-relative">
+                                    <img src="./images/aijaz.jpeg" alt="friend-pf" class="rounded-circle me-2" style="width: 38px; height: 38px; object-fit: cover;">
+                                    <span class="position-absolute bottom-0 translate-middle border border-light rounded-circle bg-success p-1" style="left: 75%;">
+                                        <span class="visually-hidden "></span>
+                                    </span>
+                                </div>
+                                <p class="m-0 fw-bold">Aijaz Sheikh</p>
+                             </div>
+                          </li>
+
+                          <!-- Community chats -->
+                          <hr class="m-0">
+                        <div>
+                        <!-- heading -->
+                         <div class="d-flex align-items-center justify-content-between mt-2 text-muted">
+                          <h4 class="m-0 text-muted">Community chats</h4>
+                          
+                         </div>
+                         <!-- short 1 -->
+                         <li class="d-lg-block p-1 rounded story class-custom">
+                          <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
+                              <div class="p-2">
+                                  <img src="./images/java.png" alt="java-logo" class="rounded me-2 mb-2" style="width: 50px; height: 50px; object-fit: cover;">
+                              </div>
+                              <div>
+                                  <p class="m-0 fw-bold">Beginners to Java</p>
+                                  <p>Java Coding</p>
+                              </div>
+                          </a>
+                      </li>
+                          </div>
+
+                          <hr class="m-0">
+                          <!-- Group chats -->
+                          <div>
+                          <!-- heading -->
+                         <div class="d-flex align-items-center justify-content-between my-3">
+                             <h4 class="m-0 text-muted">Group chats</h4>
+                         </div>
+
+                         <!-- group 1 -->
+                          <div class="dropdown-item rounded my-2 px-0 rounded story class-custom" type="button">
+                            <!-- logo -->
+                             <div class="d-flex align-items-center mx-2">
+                                <div class="position-relative">
+                                    <img src="./images/web-develop.jpeg" alt="g-logo1" class="rounded-circle me-2" style="width: 38px; height: 38px; object-fit: cover;">
+                                    <span class="position-absolute bottom-0 translate-middle border border-light rounded-circle bg-success p-1" style="left: 75%;">
+                                        <span class="visually-hidden "></span>
+                                    </span>
+                                </div>
+                                <p class="m-0 fw-bold">Web & App Development</p>
+                             </div>
+                            </div>
+
+                          <!-- group 2 -->
+                          <div class="dropdown-item rounded my-2 px-0 rounded story class-custom" type="button">
+                            <!-- logo -->
+                             <div class="d-flex align-items-center mx-2">
+                                <div class="position-relative">
+                                    <img src="./images/html-css.png" alt="friend-pf" class="rounded-circle me-2" style="width: 38px; height: 38px; object-fit: cover;">
+                                    <span class="position-absolute bottom-0 translate-middle border border-light rounded-circle bg-success p-1" style="left: 75%;">
+                                        <span class="visually-hidden "></span>
+                                    </span>
+                                </div>
+                                <p class="m-0 fw-bold">HTML & CSS</p>
+                             </div>
+                            </div>
+
+                          <!-- group 3 -->
+                          <div class="dropdown-item rounded my-2 px-0 rounded story class-custom" type="button">
+                            <!-- logo -->
+                             <div class="d-flex align-items-center mx-2">
+                                <div class="position-relative">
+                                    <img src="./images/bootsrap.jpeg" alt="friend-pf" class="rounded-circle me-2" style="width: 38px; height: 38px; object-fit: cover;">
+                                    <span class="position-absolute bottom-0 translate-middle border border-light rounded-circle bg-success p-1" style="left: 75%;">
+                                        <span class="visually-hidden "></span>
+                                    </span>
+                                </div>
+                                <p class="m-0 fw-bold">Bootstrap</p>
+                             </div>
+                            </div>
+
+                          <!-- group 4 -->
+                          <div class="dropdown-item rounded my-2 px-0 rounded story class-custom" type="button">
+                            <!-- logo -->
+                             <div class="d-flex align-items-center mx-2">
+                                <div class="position-relative">
+                                    <img src="./images/plus.png" alt="g-logo4" class="rounded-circle me-2" style="width: 40px; height: 40px; object-fit: cover;">
+                                    <span class="position-absolute bottom-0 translate-middle border border-light rounded-circle bg-success p-1" style="left: 75%;">
+                                        <span class="visually-hidden "></span>
+                                    </span>
+                                </div>
+                                <p class="m-0 fw-bold">Create group chat</p>
+                             </div>
+                            </div>
+
+                          </div>
+                    </div>
+                </div>
+             </div>
+            <!-- right side bar end-->
+        </div>
+     </div>
+    <!-- Main body content end -->
+
+
+
+    <!-- chat icon  -->
+     <div class="fixed-bottom right-100 p-5" style="z-index: 6; left: initial;" type="button">
+        <i class="fas fa-edit bg-body-secondary rounded-circle p-4 shadow"></i>
+     </div>
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
